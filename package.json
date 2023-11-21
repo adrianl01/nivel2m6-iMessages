@@ -4,11 +4,17 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "parcel": "^2.10.3"
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
   },
   "dependencies": {
     "@vaadin/router": "^1.7.5",
     "firebase": "^10.6.0",
     "lodash": "^4.17.21"
+  },
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
   }
 }
