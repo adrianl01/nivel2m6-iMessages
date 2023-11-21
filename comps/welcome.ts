@@ -1,4 +1,4 @@
-import { state } from "../../src/state";
+import { state } from "../src/state";
 
 customElements.define("welc-el", class Welcome extends HTMLElement {
     connectedCallback() {
