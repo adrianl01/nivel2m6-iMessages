@@ -40364,6 +40364,7 @@ router.setRoutes([
 ]);
 
 },{"./comps/welcome.ts":"ayIFg","./comps/chat.ts":"2WCgZ","@vaadin/router":"kVZrF"}],"ayIFg":[function(require,module,exports) {
+var _router = require("@vaadin/router");
 var _state = require("../src/state");
 customElements.define("welc-el", class Welcome extends HTMLElement {
     connectedCallback() {
@@ -40404,14 +40405,14 @@ customElements.define("welc-el", class Welcome extends HTMLElement {
                 (0, _state.state).accessToRoom();
             });
             else (0, _state.state).singIn(()=>{
-                (0, _state.state).askNewRoom(()=>{});
+                (0, _state.state).askNewRoom((0, _state.state).accessToRoom());
             });
             console.log((0, _state.state).data);
         });
-    // const buttonForm = this.querySelector(".form-button") as HTMLElement;
-    // buttonForm.addEventListener("click", (e) => {
-    //     e.preventDefault();
-    // })
+        const buttonForm = this.querySelector(".form-button");
+        buttonForm.addEventListener("click", (e)=>{
+            (0, _router.Router).go("/chat");
+        });
     }
     render() {
         const div = document.createElement("div");
@@ -40522,17 +40523,13 @@ customElements.define("welc-el", class Welcome extends HTMLElement {
         .existant-room:focus + .form-room-id {
             display:flex;
         }
-
-
 `;
         this.appendChild(div);
         this.appendChild(style);
     }
 });
 
-},{"../src/state":"1Yeju"}],"2WCgZ":[function(require,module,exports) {
-
-},{}],"kVZrF":[function(require,module,exports) {
+},{"../src/state":"1Yeju","@vaadin/router":"kVZrF"}],"kVZrF":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Resolver", ()=>Resolver);
@@ -42839,6 +42836,115 @@ Router.NavigationTrigger = {
     CLICK
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["gmPuC","h7u1C"], "h7u1C", "parcelRequire4cb4")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2WCgZ":[function(require,module,exports) {
+var _state = require("../src/state");
+customElements.define("chatr-el", class ChatRoom extends HTMLElement {
+    connectedCallback() {
+        (0, _state.state).subscribe(()=>{
+            const currentState = (0, _state.state).getState();
+            this.messages = currentState.messages;
+            this.render();
+        });
+        this.render();
+    }
+    addlisteners() {
+        const form = this.querySelector(".form");
+        form?.addEventListener("submit", function(e) {
+            e.preventDefault();
+            const target = e.target;
+            const formInput = target?.input.value;
+            (0, _state.state).pushMessage(formInput);
+        });
+    }
+    render() {
+        const style = document.createElement("style");
+        style.textContent = `                
+             .root {
+             width: 375px;
+             font-family: 'Roboto', sans-serif;
+             min-height: 667px;
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+            }            
+            .absoulte{
+                position: absolute            
+            }            
+            .header {
+                width: 375px;
+                height: 60px;
+                background-color: palegreen;
+            }
+            .title {
+                font-family: 'Roboto', sans-serif;
+                text-align: center;
+                font-size: 80;
+            }
+            .feed{
+                display: flex;
+                flex-direction: column;
+                height: 393px;
+                width: 375px;
+                background-color:green;
+            }
+            .form {
+                display: flex;
+                flex-direction: column;
+                gap: 7px;
+                background-color: aquamarine;
+                padding: 10px 5px;
+                position:bottom;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .label {
+                font-size: 25;
+            }
+            .input {
+                width: 312px;
+                height: 55px;
+                border-radius: 5px;
+                font-size: 20px;
+                border: solid black 3px;
+            }
+            .button {
+                width: 312px;
+                height: 55px;
+                border-radius: 5px;
+                font-size: 20px;
+                border: solid black 3px;
+            }
+            .button:active {
+                background-color: aqua;
+            }
+            `;
+        const div = document.createElement("div");
+        div.innerHTML = `
+                <div class="absolute">
+                <header class="header"></header>
+                <h2 class="title">Chat</h2>        
+                </div>
+                <div class="feed">${this.messages.map((m)=>{
+            return `<div class="message">${m.from}:${m.message}</div>`;
+        })}
+                </div>
+                <form class="form">                  
+                    <input class="input" type="text" name="input">
+                    <button class="button" type="submit" id="textid">Comenzar</button>
+                </form>
+                `;
+        div.classList.add("root");
+        this.appendChild(style);
+        this.appendChild(div);
+        this.addlisteners();
+    }
+    constructor(...args){
+        super(...args);
+        this.messages = [];
+    }
+});
+
+},{"../src/state":"1Yeju"}]},["gmPuC","h7u1C"], "h7u1C", "parcelRequire4cb4")
 
 //# sourceMappingURL=index.b71e74eb.js.map

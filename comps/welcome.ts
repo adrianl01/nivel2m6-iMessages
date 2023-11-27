@@ -1,3 +1,4 @@
+import { Router } from "@vaadin/router";
 import { state } from "../src/state";
 
 customElements.define("welc-el", class Welcome extends HTMLElement {
@@ -43,7 +44,7 @@ customElements.define("welc-el", class Welcome extends HTMLElement {
                 })
             } else {
                 state.singIn(() => {
-                    state.askNewRoom(() => { });
+                    state.askNewRoom(state.accessToRoom());
                 })
             }
             console.log(state.data)
@@ -51,10 +52,10 @@ customElements.define("welc-el", class Welcome extends HTMLElement {
 
         })
 
-        // const buttonForm = this.querySelector(".form-button") as HTMLElement;
-        // buttonForm.addEventListener("click", (e) => {
-        //     e.preventDefault();
-        // })
+        const buttonForm = this.querySelector(".form-button") as HTMLElement;
+        buttonForm.addEventListener("click", (e) => {
+            Router.go("/chat");
+        })
     }
     render() {
         const div = document.createElement("div")
@@ -165,8 +166,6 @@ customElements.define("welc-el", class Welcome extends HTMLElement {
         .existant-room:focus + .form-room-id {
             display:flex;
         }
-
-
 `;
         this.appendChild(div);
         this.appendChild(style);

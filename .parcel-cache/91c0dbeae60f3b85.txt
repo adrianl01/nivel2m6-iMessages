@@ -1,6 +1,6 @@
 16992
 99C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\svgo\plugins\removeXMLNS.js133301044606190000 0
-81C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\dist\index.b71e74eb.js133450543877789678 0
+81C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\dist\index.b71e74eb.js133453145830351027 0
 103C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\caniuse-lite\data\regions\TC.js133450515573470000 0
 113C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\lmdb\node_modules\node-addon-api\index.js133428417818100000 0
 90C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\lodash\multiply.js133301044835430000 0
@@ -46,7 +46,7 @@
 98C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\svgo\plugins\cleanupIDs.js133301044606190000 0
 126C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\firebase\auth\cordova\dist\compat\messaging\index.d.ts133450527125230000 0
 95C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\undici-types\agent.d.ts133428427258450000 0
-69C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\.gitignore133450519051016984 0
+69C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\.gitignore133453088274749842 0
 71C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules133450543835013433 1
 125C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\@parcel\reporter-dev-server\lib\ServerReporter.js.map133450515504830000 0
 89C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\lodash\toLower.js133301044835430000 0
@@ -109,7 +109,7 @@
 111C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\caniuse-lite\data\features\autofocus.js133450515573470000 0
 128C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\firebase\firestore\lite\dist\esm\auth\cordova\index.d.ts133450527125230000 0
 114C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\firebase\auth\cordova\dist\compat\database133450527902485872 1
-63C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\dist133450543878988927 1
+63C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\dist133453145831790131 1
 94C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\wrap-ansi\package.json133301044539510000 0
 107C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\firebase\firebase-app-compat.js.map133450527125230000 0
 68C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\router.ts133450539549426898 0
@@ -299,7 +299,7 @@
 128C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\@parcel\core\test\fixtures\invalid-target-source-missing133450518227776601 1
 176C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\@firebase\firestore\dist\lite\packages\firestore\test\unit\local\remote_document_change_buffer.test.d.ts133450527104950000 0
 78C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\@babel133450518033271917 1
-75C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\comps\welcome.ts133450535118178871 0
+75C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\comps\welcome.ts133453145814900666 0
 104C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\postcss-value-parser\lib\unit.js133301044612420000 0
 144C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\@firebase\auth\dist\node-esm\src\api\authentication\email_link.test.d.ts133450527105270000 0
 111C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\@parcel\runtime-js\src\helpers\.babelrc133450515555980000 0
@@ -841,7 +841,7 @@
 92C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\lodash\fp\partial.js133301044835430000 0
 150C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\@firebase\auth\dist\esm5\src\api\password_policy\get_password_policy.test.d.ts133450527105270000 0
 94C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\is-arrayish\.npmignore133301044973270000 0
-74C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\dist\index.html133450543878918966 0
+74C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\dist\index.html133453145830730783 0
 141C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\@firebase\auth\dist\rn\src\api\project_config\get_project_config.d.ts133450527105270000 0
 106C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\caniuse-lite\data\features\heif.js133450515573470000 0
 125C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\firebase\compat\firestore\dist\performance\index.d.ts133450527125230000 0
@@ -8582,7 +8582,7 @@
 138C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\firebase\compat\installations\dist\esm\compat\analytics\index.d.ts133450527125230000 0
 148C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\@grpc\grpc-js\build\src\generated\grpc\channelz\v1\GetChannelResponse.js.map133450527106290000 0
 124C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\caniuse-lite\data\features\indeterminate-checkbox.js133450515573470000 0
-85C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\dist\index.b71e74eb.js.map133450543878799052 0
+85C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\dist\index.b71e74eb.js.map133453145831580291 0
 129C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\firebase\compat\installations\dist\esm\app\index.cdn.d.ts133450527125230000 0
 125C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\firebase\compat\installations\dist\esm\app\index.d.ts133450527125230000 0
 126C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\firebase\compat\installations\dist\database\index.d.ts133450527125230000 0
@@ -16928,7 +16928,7 @@
 121C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\@babel\highlight\node_modules\chalk\index.js.flow133301044789090000 0
 115C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\@babel\highlight\node_modules\chalk\license133301044789090000 0
 120C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\@babel\highlight\node_modules\chalk\package.json133301044789090000 0
-72C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\comps\chat.ts133450523255278512 0
+72C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\comps\chat.ts133453138555381615 0
 120C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\@babel\highlight\node_modules\chalk\templates.js133301044789090000 0
 113C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\@babel\highlight\node_modules\chalk\types133450518150172557 1
 122C:\Users\Administrator\Desktop\carrera\nivel-2\m6.2\rooms2\node_modules\@babel\highlight\node_modules\ansi-styles\index.js133301044789680000 0
